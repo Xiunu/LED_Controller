@@ -1,7 +1,7 @@
-var canvas, wid, ctx, imageData, rgba;
+var canvas, wid, ctx, imageData, rgba, rSlide, gSlide, bSlide;
 var savedColors;
 var nY =127;
-
+var curR, curG, curB = 0;
 window.addEventListener('load', init, false);
 
 /*
@@ -30,7 +30,10 @@ function testConversion(){
 function init(){
     savedColors = new Array(10);
     canvas = document.getElementById('canvas');
-    wid =canvas.width;
+    rSlide = document.getElementById('rSlider');
+    gSlide = document.getElementById('gSlider');
+    bSlide = document.getElementById('bSlider');
+    wid = canvas.width;
     canvas.height=wid;
     ctx = canvas.getContext('2d');
     imageData = ctx.createImageData(wid, wid);
@@ -48,7 +51,7 @@ function init(){
 }
 
 function updateWindow(){
-    nY =parseInt (document.getElementById('yRange').value);
+    nY = parseInt (document.getElementById('yRange').value);
     draw();
 }
 
@@ -79,6 +82,8 @@ function addColorPick(){
         curNode.addEventListener("click", function(){
             var localCount=i;
             rgba = savedColors[localCount];
+            //TODO - Hier RGB Werte Einzeln aus dem String fischen
+            
             color.style.background = rgba;
             color.textContent = rgba;
         });
@@ -143,7 +148,9 @@ function draw() {
      else{
          sCol="white";
      }
-     
+    curR = data[0];
+    curG = data[1];
+    curB = data[2];
     color.style.background =  rgba;
     color.style.color =  sCol; 
     color.textContent = rgba;
