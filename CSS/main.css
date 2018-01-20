@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    font-family: "Unispace";
+    margin: 0;
+    padding: 0;
+}
+html{
+     font-size: large;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+}
+body{
+    margin: 0;
+    padding: 0 22%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+#color{
+    width: 20%;
+    border: ;
+    text-align: center;
+    padding: 2% 0;
+    border-style: groove;
+}
+
+
+#canvasContainer{
+    margin: auto;
+}
+
+canvas{
+    display: inline-block;
+    border-style: groove;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a,
+button {
+    color: inherit;
+    transition: .3s;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+#slidecontainer {
+    width: 100px; /* Width of the outside container */
+}
+
+#lowerOptions {
+    display: block;
+}
+
+/* The slider itself */
+.vertical {  /* Override default CSS styles */
+    appearance: none;
+    width: 50px; /* Full-width */
+    height: 600px; /* Specified height */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    -webkit-appearance: slider-vertical;
+}
+
+
+body{
+    background-color: #f0f0f0;
+}
+
+header{
+    width: 100%;
+    color: black;
+    display: block;
+    
+}
+
+header nav ul {
+	list-style: none;
+    display: block;
+}
+nav ul li {
+    display: inline-block;
+	font-size: 170%;
+    padding: 1.5% 5%;
+	font-weight: bold;
+	font-style: normal;
+    text-align: center;
+    width:22.5%;
+}
+nav{
+    display: block;
+    width: 100%;
+}
+
+nav ul li {
+	
+	font-size: 170%;
+    padding: 1.5% 0%;
+    text-align: center;
+}
+
+ul li a {
+	color: white;
+    transition: 0.3s linear;
+    
+}
+ul li:hover a {
+	color: #2C9AB7;
+}
+
+h1{
+    font-size: 240%;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+div{
+    display: inline-block;
+}
+
+
+@media (max-width: 1540px){
+    body{
+    padding: 0 15%;
+}
+
+}
+/*Breakpoint because well... it broke my design so!*/
+@media (max-width: 1220px){
+    body{
+    padding: 0 10%;
+}
+
+}
+/*Breakpoint because i want to make a transition to zero padding instead of jumping there*/
+@media (max-width: 1020px){
+    body{
+    padding: 0 5%;
+}
+
+
+}
+/*Because it was my plan to go down to zero padding*/
+@media (max-width: 900px){
+    body{
+    padding: 0;
+    }
+
+}
+/*For Mobiledevices*/
+@media (max-width: 815px){
+
+
+
+nav ul li {
+	font-size: 100%;
+    padding: 1.5% 0%;
+}
+
+div{
+    display: block;
+}
+
+button{
+    margin-top: 2%;
+    padding: 1% 2.5%;
+    color: black;
+    background-color: white;
+    font-size: inherit;
+    font-family: "Segoe Script";
+    font-weight: bold;
+}
+
+}

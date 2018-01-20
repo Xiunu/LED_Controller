@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LED Controler Interface</title>
+        <link rel="stylesheet" href="CSS/main.css">
+        <script type="text/javascript" src="JavaScript/yCbCrColorSelector.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>LED Controller</h1>
+        </header>
+        <main>
+            <div id="canvasContainer">
+                <canvas id="canvas" width="600" ></canvas>
+                <div id="slidecontainer">
+                    <input type="range" min="0" max="255" value="127" class="vertical" id="yRange" orient="vertical">
+                </div>
+                <div id="slidecontainerRGB">
+                    <input type="range" min="0" max="255" value="255" id="rSlider">
+                    <input type="range" min="0" max="255" value="255" id="gSlider">
+                    <input type="range" min="0" max="255" value="255" id="bSlider">
+                </div>
+            </div>
+            <div id="presetContainerConatiner">
+            </div>
+            <div id="lowerOptions">
+                <div id="color" height="150" width="75"></div>
+                <button type="button" id="saveAsPreset">Save as Preset</button>
+            </div>
+        </main>
+        <br>
+        <footer>
+        </footer>
+    </body>
+</html>
